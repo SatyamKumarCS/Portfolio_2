@@ -57,7 +57,7 @@ function App() {
 
     if (isReload) {
       // Ambil path tanpa hash
-      const baseUrl = window.location.origin + "/Portfolio_2/";
+      const baseUrl = window.location.origin + "/";
       window.location.replace(baseUrl);
     }
   }, []);
@@ -131,7 +131,7 @@ function App() {
               handle="satyamkumar"
               status="Online"
               contactText="Contact Me"
-              avatarUrl="/Portfolio_2/assets/saty.png"
+              avatarUrl="/assets/saty.png"
               showUserInfo={true}
               enableTilt={true}
               enableMobileTilt={false}
