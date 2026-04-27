@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { FiX, FiGithub } from 'react-icons/fi'; // Install react-icons jika belum: npm install react-icons
+import { FiX, FiGithub, FiExternalLink } from 'react-icons/fi'; // Install react-icons jika belum: npm install react-icons
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   // State untuk mengontrol animasi penutupan
@@ -65,15 +65,28 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
                 {project.fullDescription}
             </p>
 
-            <a
+            <div className="flex gap-3 mt-4">
+              <a
                 href={project.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-4 inline-flex items-center justify-center gap-2 font-semibold bg-violet-600 p-3 px-5 rounded-full w-full cursor-pointer border border-transparent hover:bg-violet-700 transition-colors"
-            >
+                className="flex-1 inline-flex items-center justify-center gap-2 font-semibold bg-zinc-800 p-3 px-5 rounded-full cursor-pointer border border-zinc-600 hover:bg-zinc-700 transition-colors"
+              >
                 <FiGithub />
                 <span>Source Code</span>
-            </a>
+              </a>
+              {project.liveUrl && (
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 inline-flex items-center justify-center gap-2 font-semibold bg-violet-600 p-3 px-5 rounded-full cursor-pointer border border-transparent hover:bg-violet-700 transition-colors"
+                >
+                  <FiExternalLink />
+                  <span>Live Demo</span>
+                </a>
+              )}
+            </div>
         </div>
       </div>
        {/* CSS untuk animasi */}

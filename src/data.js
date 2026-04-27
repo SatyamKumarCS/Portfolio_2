@@ -1,4 +1,4 @@
-import HeroImage from "/assets/hero-img.webp";
+import HeroImage from "/assets/saty.png";
 
 const Image = {
   HeroImage,
@@ -6,235 +6,149 @@ const Image = {
 
 export default Image;
 
-import Tools1 from "/assets/tools/vscode.png";
-import Tools2 from "/assets/tools/reactjs.png";
-import Tools3 from "/assets/tools/nextjs.png";
-import Tools4 from "/assets/tools/tailwind.png";
-import Tools5 from "/assets/tools/bootstrap.png";
-import Tools6 from "/assets/tools/js.png";
-import Tools7 from "/assets/tools/nodejs.png";
-import Tools8 from "/assets/tools/github.png";
-import Tools9 from "/assets/tools/ai.png";
-import Tools10 from "/assets/tools/canva.png";
-import Tools11 from "/assets/tools/figma.png";
-import Tools12 from "/assets/tools/kotlin.png";
-import Tools13 from "/assets/tools/firebase.png";
-import Tools14 from "/assets/tools/html.png";
-import Tools15 from "/assets/tools/css.png";
-import Tools16 from "/assets/tools/ts.png";
-import Tools17 from "/assets/tools/php.png";
-import Tools18 from "/assets/tools/vite.png";
-import Tools19 from "/assets/tools/mysql.png";
-
+const Tools2 = "./assets/tools/reactjs.png";
+const Tools3 = "./assets/tools/nextjs.png";
+const Tools4 = "./assets/tools/tailwind.png";
+const Tools6 = "./assets/tools/js.png";
+const Tools7 = "./assets/tools/nodejs.png";
+const Tools8 = "./assets/tools/github.png";
+const Tools11 = "./assets/tools/figma.png";
+const Tools16 = "./assets/tools/ts.png";
+const Tools18 = "./assets/tools/vite.png";
+const Tools19 = "./assets/tools/mysql.png";
+const Tools1 = "./assets/tools/vscode.png";
 
 export const listTools = [
-  {
-    id: 1,
-    gambar: Tools1,
-    nama: "Visual Studio Code",
-    ket: "Code Editor",
-    dad: "100",
-  },
-  {
-    id: 2,
-    gambar: Tools2,
-    nama: "React JS",
-    ket: "Framework",
-    dad: "200",
-  },
-  {
-    id: 3,
-    gambar: Tools3,
-    nama: "Next JS",
-    ket: "Framework",
-    dad: "300",
-  },
-  {
-    id: 4,
-    gambar: Tools4,
-    nama: "Tailwind CSS",
-    ket: "Framework",
-    dad: "400",
-  },
-  {
-    id: 5,
-    gambar: Tools5,
-    nama: "Bootstrap",
-    ket: "Framework",
-    dad: "500",
-  },
-  {
-    id: 6,
-    gambar: Tools6,
-    nama: "Javascript",
-    ket: "Language",
-    dad: "600",
-  },
-  {
-    id: 7,
-    gambar: Tools7,
-    nama: "Node JS",
-    ket: "Javascript Runtime",
-    dad: "700",
-  },
-  {
-    id: 8,
-    gambar: Tools8,
-    nama: "Github",
-    ket: "Repository",
-    dad: "800",
-  },
-  {
-    id: 9,
-    gambar: Tools9,
-    nama: "Adobe Illustrator",
-    ket: "Design App",
-    dad: "900",
-  },
-  {
-    id: 10,
-    gambar: Tools10,
-    nama: "Canva",
-    ket: "Design App",
-    dad: "1000",
-  },
-  {
-    id: 11,
-    gambar: Tools11,
-    nama: "Figma",
-    ket: "Design App",
-    dad: "1100",
-  },
-  {
-    id: 12,
-    gambar: Tools12,
-    nama: "Kotlin",
-    ket: "Language",
-    dad: "1200",
-  },
-  {
-    id: 13,
-    gambar: Tools13,
-    nama: "Firebase",
-    ket: "Framework",
-    dad: "1300",
-  },
-  {
-    id: 14,
-    gambar: Tools14,
-    nama: "HTML",
-    ket: "Language",
-    dad: "1400",
-  },
-  {
-    id: 15,
-    gambar: Tools15,
-    nama: "CSS",
-    ket: "Language",
-    dad: "1500",
-  },
-  {
-    id: 16,
-    gambar: Tools16,
-    nama: "TypeScript",
-    ket: "Language",
-    dad: "1600",
-  },
-  {
-    id: 17,
-    gambar: Tools17,
-    nama: "PHP",
-    ket: "Language",
-    dad: "1700",
-  },
-  {
-    id: 18,
-    gambar: Tools18,
-    nama: "Vite",
-    ket: "Framework",
-    dad: "1800",
-  },
-  {
-    id: 19,
-    gambar: Tools19,
-    nama: "MySql",
-    ket: "Framework",
-    dad: "1900",
-  },
+  // ── Frontend ──────────────────────────────────────────────
+  { id: 1, gambar: Tools2, nama: "React.js", ket: "Frontend Framework", dad: "100", category: "Frontend" },
+  { id: 2, gambar: Tools3, nama: "Next.js", ket: "Frontend Framework", dad: "150", category: "Frontend" },
+  { id: 3, gambar: Tools16, nama: "TypeScript", ket: "Language", dad: "200", category: "Frontend" },
+  { id: 4, gambar: Tools6, nama: "JavaScript", ket: "Language", dad: "250", category: "Frontend" },
+  { id: 5, gambar: Tools4, nama: "Tailwind CSS", ket: "Styling Framework", dad: "300", category: "Frontend" },
+  { id: 6, gambar: Tools18, nama: "Vite", ket: "Build Tool", dad: "350", category: "Frontend" },
+
+  // ── Backend ───────────────────────────────────────────────
+  { id: 7, gambar: Tools7, nama: "Node.js", ket: "Runtime", dad: "400", category: "Backend" },
+  { id: 8, gambar: "https://cdn.simpleicons.org/express/FFFFFF", nama: "Express.js", ket: "Web Framework", dad: "450", category: "Backend" },
+  { id: 9, gambar: "https://cdn.simpleicons.org/fastapi/009688", nama: "FastAPI", ket: "API Framework", dad: "500", category: "Backend" },
+  { id: 10, gambar: "https://cdn.simpleicons.org/postman/FF6C37", nama: "REST APIs", ket: "API Design", dad: "550", category: "Backend" },
+
+  // ── AI / ML ───────────────────────────────────────────────
+  { id: 11, gambar: "https://cdn.simpleicons.org/langchain/1C3C3C", nama: "LangChain", ket: "LLM Framework", dad: "600", category: "AI/ML" },
+  { id: 12, gambar: "https://cdn.simpleicons.org/langchain/1C3C3C", nama: "LangGraph", ket: "Agentic AI", dad: "650", category: "AI/ML" },
+  { id: 13, gambar: "https://cdn.simpleicons.org/scikitlearn/F7931E", nama: "Scikit-learn", ket: "ML Library", dad: "700", category: "AI/ML" },
+  { id: 14, gambar: "https://upload.wikimedia.org/wikipedia/commons/6/69/XGBoost_logo.png", nama: "XGBoost", ket: "ML Library", dad: "750", category: "AI/ML" },
+  { id: 15, gambar: "https://cdn.simpleicons.org/huggingface/FFD21E", nama: "Hugging Face", ket: "NLP / Transformers", dad: "800", category: "AI/ML" },
+  { id: 16, gambar: "https://cdn.simpleicons.org/opencv/5C3EE8", nama: "OpenCV", ket: "Computer Vision", dad: "850", category: "AI/ML" },
+
+  // ── Databases ─────────────────────────────────────────────
+  { id: 17, gambar: Tools19, nama: "MySQL", ket: "Relational DB", dad: "900", category: "Database" },
+  { id: 18, gambar: "https://cdn.simpleicons.org/postgresql/4169E1", nama: "PostgreSQL", ket: "Relational DB", dad: "950", category: "Database" },
+
+  // ── DevOps & Cloud ────────────────────────────────────────
+  { id: 19, gambar: "https://cdn.simpleicons.org/docker/2496ED", nama: "Docker", ket: "Containerization", dad: "1000", category: "DevOps" },
+  { id: 20, gambar: "https://cdn.simpleicons.org/kubernetes/326CE5", nama: "Kubernetes", ket: "Orchestration", dad: "1050", category: "DevOps" },
+  { id: 21, gambar: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", nama: "AWS", ket: "Cloud Platform", dad: "1100", category: "DevOps" },
+  { id: 22, gambar: "https://cdn.simpleicons.org/nginx/009639", nama: "Nginx", ket: "Web Server", dad: "1150", category: "DevOps" },
+  { id: 23, gambar: "https://cdn.simpleicons.org/githubactions/2088FF", nama: "GitHub Actions", ket: "CI/CD", dad: "1200", category: "DevOps" },
+
+  // ── Testing ───────────────────────────────────────────────
+  { id: 24, gambar: "https://cdn.simpleicons.org/jest/C21325", nama: "Jest", ket: "Unit Testing", dad: "1250", category: "Testing" },
+  { id: 25, gambar: "https://cdn.simpleicons.org/cypress/17202C/FFFFFF", nama: "Cypress", ket: "E2E Testing", dad: "1300", category: "Testing" },
+  { id: 26, gambar: "https://cdn.simpleicons.org/playwright/2EAD33", nama: "Playwright", ket: "E2E Testing", dad: "1350", category: "Testing" },
+
+  // ── Tools ─────────────────────────────────────────────────
+  { id: 27, gambar: Tools8, nama: "GitHub", ket: "Version Control", dad: "1400", category: "Tools" },
+  { id: 28, gambar: Tools1, nama: "VS Code", ket: "Code Editor", dad: "1450", category: "Tools" },
 ];
 
-import Proyek1 from "/assets/proyek/proyek1.jpg";
-import Proyek2 from "/assets/proyek/proyek2.jpg";
-import Proyek3 from "/assets/proyek/proyek3.jpg";
-import Proyek4 from "/assets/proyek/proyek4.jpg";
-import Proyek5 from "/assets/proyek/proyek5.jpg";
-import Proyek6 from "/assets/proyek/proyek6.jpg";
+const Proyek1 = "./assets/project/credit_risk.png";
+const Proyek2 = "./assets/project/revora.png";
+const Proyek3 = "./assets/project/news_credibility.png";
+const Proyek4 = "./assets/project/edemy.png";
+const Proyek5 = "./assets/project/ayusutra.png";
+const Proyek6 = "./assets/project/stayfinder.png";
 
 export const listProyek = [
   {
     id: 1,
     image: Proyek1,
-    title: "AIS Detection App",
-    subtitle: "A mobile application powered by Artificial Intelligence...",
-    fullDescription:"A mobile application powered by Artificial Intelligence and Machine Learning, developed to assist in the early detection of Adolescent Idiopathic Scoliosis (AIS). By analyzing patient data and patterns, the app provides predictions that can help doctors and patients take preventive measures. This project demonstrates the role of AI in modern healthcare by improving accuracy, accessibility, and efficiency in medical diagnosis.",
+    title: "Default Credit Card Prediction",
+    subtitle: "An ML-powered system to predict credit card payment defaults using ensemble models...",
+    fullDescription: "A machine learning pipeline built to predict whether a credit card holder will default on their next payment. The system leverages XGBoost, Scikit-learn, and advanced feature engineering on real-world financial data. It includes a full preprocessing pipeline, SHAP-based explainability, and an agentic AI underwriting copilot interface, making it production-grade and interpretable for financial decision-making.",
     borderColor: "#3B82F6",
     gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://github.com/SatyamKumarCS/Default-Credit-Card-Prediction",
+    liveUrl: "https://default-credit-card.streamlit.app/",
     dad: "100",
   },
   {
     id: 2,
     image: Proyek2,
-    title: "IoT Air Quality Monitoring",
-    subtitle: "A smart IoT system designed to measure and analyze air quality...",
-    fullDescription:"A smart IoT system designed to measure and analyze air quality using sensors connected to a mobile application. The app provides real-time updates on air quality levels, empowering users to make healthier lifestyle decisions based on environmental conditions. This project showcases the potential of IoT in addressing environmental and public health issues.",
+    title: "Revora",
+    subtitle: "A full-stack AI-powered platform for intelligent content generation and review...",
+    fullDescription: "Revora is a full-stack AI-powered web application designed to streamline content generation and analysis. Built with React.js, Node.js, and LangChain, it integrates large language models to deliver smart, context-aware outputs. The platform features user authentication, a responsive dashboard, and real-time AI interactions, showcasing a production-ready agentic architecture for modern web products.",
     borderColor: "#10B981",
     gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    url: "https://github.com/SatyamKumarCS/Revora",
+    liveUrl: "https://revora-frontend.onrender.com/",
     dad: "200",
   },
   {
     id: 3,
     image: Proyek3,
-    title: "IoT Heartbeat Monitoring System",
-    subtitle: "An IoT-based healthcare project developed to measure and monitor...",
-    fullDescription:"An IoT-based healthcare project developed to measure and monitor heart rate in real-time. The system connects sensors to a local web server, enabling users and healthcare providers to track data directly from a web interface. This project highlights the integration of hardware and software to create efficient medical solutions that can be applied in local clinics or personal health monitoring.",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    title: "News Credibility Monitor",
+    subtitle: "An NLP-driven tool for detecting fake news and assessing article credibility...",
+    fullDescription: "News Credibility Monitor is an NLP-powered web tool that evaluates the authenticity and reliability of news articles. Using transformer models and machine learning classifiers, it analyzes text patterns, source quality, and semantic signals to flag potentially misleading content. The project demonstrates practical application of AI in combating misinformation through a clean, intuitive interface.",
+    borderColor: "#8B5CF6",
+    gradient: "linear-gradient(145deg, #8B5CF6, #000)",
+    url: "https://github.com/SatyamKumarCS/news-credibility-monitor",
+    liveUrl: "https://news-detector-ai.streamlit.app/",
     dad: "300",
   },
   {
     id: 4,
     image: Proyek4,
-    title: "Personal Web Portfolio",
-    subtitle: "An interactive web portfolio showcasing my professional journey...",
-    fullDescription:"An interactive web portfolio showcasing my professional journey, skills, and projects. Designed with a clean yet modern aesthetic, the portfolio highlights my technical expertise in web development, software engineering, and IoT. The site also serves as a central hub for potential employers and collaborators to explore my works, reflecting both my creativity and technical precision.",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    title: "Eduverse",
+    subtitle: "An interactive e-learning platform with AI-assisted course recommendations...",
+    fullDescription: "Eduverse is a modern e-learning platform built with Next.js and FastAPI, offering structured courses, quizzes, and AI-assisted learning paths. The system personalizes content recommendations based on user progress and preferences using ML models. It features a clean, responsive UI, secure authentication, and a scalable backend, making education more accessible and adaptive.",
+    borderColor: "#F59E0B",
+    gradient: "linear-gradient(145deg, #F59E0B, #000)",
+    url: "https://github.com/SatyamKumarCS/Eduverse",
+    liveUrl: "https://eduverse-57cc.vercel.app/",
     dad: "400",
   },
-    {
+  {
     id: 5,
     image: Proyek5,
-    title: "Color Blindness Detection App",
-    subtitle: "A cross-platform application available on both mobile and desktop...",
-    fullDescription:"A cross-platform application available on both mobile and desktop, created to help identify different types of color blindness through color recognition tests. The app provides users with instant results, making it useful for educational, medical, and self-assessment purposes. Its intuitive design and accessibility aim to support individuals in understanding and managing color vision deficiencies.",
-    borderColor: "#3B82F6",
-    gradient: "linear-gradient(145deg, #3B82F6, #000)",
-    url: "https://github.com/rissss21",
+    title: "Ayur Sutra",
+    subtitle: "An Ayurveda-inspired wellness app with AI-powered health recommendations...",
+    fullDescription: "Ayur Sutra is a wellness application rooted in Ayurvedic principles, enhanced with AI-driven health recommendations. Users can assess their Dosha type, receive personalized diet and lifestyle guidance, and track wellness goals. Built with React.js and a Python backend, the app bridges traditional medicine with modern technology to provide holistic, data-informed health insights.",
+    borderColor: "#10B981",
+    gradient: "linear-gradient(180deg, #10B981, #000)",
+    url: "https://github.com/SatyamKumarCS/Ayur_Sutra",
+    liveUrl: "https://ayur-sutra-henna.vercel.app/",
     dad: "500",
   },
   {
     id: 6,
     image: Proyek6,
-    title: "Coffee Shop Website",
-    subtitle: "A fully functional website designed for a coffee shop, enabling...",
-    fullDescription:"A fully functional website designed for a coffee shop, enabling customers to explore the menu, learn about the shop’s story, and place orders online. The project focused on creating an attractive and modern interface, integrating responsive design for mobile and desktop, and ensuring smooth navigation for users. This website not only improved customer experience but also supported the coffee shop’s digital presence and business growth.",
-    borderColor: "#10B981",
-    gradient: "linear-gradient(180deg, #10B981, #000)",
-    url: "https://github.com/rissss21",
+    title: "Stay Finder",
+    subtitle: "A full-stack accommodation booking platform with smart search and filters...",
+    fullDescription: "Stay Finder is a full-stack accommodation discovery and booking platform inspired by Airbnb. Built with the MERN stack (MongoDB, Express, React, Node), it supports property listings, advanced search filters, user authentication, and booking management. The platform features a polished UI, real-time availability updates, and a scalable REST API backend.",
+    borderColor: "#3B82F6",
+    gradient: "linear-gradient(145deg, #3B82F6, #000)",
+    url: "https://github.com/SatyamKumarCS/Stay_Finde",
+    liveUrl: "https://stay-finde.vercel.app/",
     dad: "600",
   },
+];
+
+export const listAchievements = [
+  { id: 1, icon: "🏛️", title: "Finalist at IIIT Delhi", subtitle: "Finalist in the HackFinance Hackathon held at the prestigious IIIT Delhi." },
+  { id: 2, icon: "🌍", title: "7th Place – Sustainovate", subtitle: "Secured 7th place in the Sustainovate 2025 hackathon by NexIntel Synergy." },
+  { id: 3, icon: "🥉", title: "4th Place – Eonverse", subtitle: "Secured 4th place out of numerous teams in the highly competitive Eonverse Hackathon." },
+  { id: 4, icon: "🏆", title: "LeetCode 1600+ Rating", subtitle: "Consistently solving medium & hard problems to maintain a top competitive programming rating." },
+  { id: 5, icon: "🧠", title: "250+ LeetCode Questions", subtitle: "Mastered arrays, trees, graphs, DP, and system design algorithms." },
+  { id: 6, icon: "⭐", title: "70+ GitHub Repositories", subtitle: "Maintained 70+ public repos spanning AI/ML, Full Stack, DevOps, and research." },
 ];
